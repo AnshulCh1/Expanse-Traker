@@ -28,7 +28,7 @@ def menu():
     print("***************************************************************")
     print("***************************************************************") 
     # Fancy big title using pyfiglet with red color
-    ascii_banner = pyfiglet.figlet_format("EXPANSE TRAKER", font="slant")
+    ascii_banner = pyfiglet.figlet_format("EXPENSE TRACKER", font="slant")
     print(Fore.RED + ascii_banner + Style.RESET_ALL)  # Set the banner in red
 
     while True:

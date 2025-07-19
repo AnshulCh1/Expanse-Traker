@@ -8,7 +8,7 @@ def add_product(name, category, quantity, price):
     session.add(product)
     session.commit()
     session.close()
-    print("✅ Product added.")
+    print("Product added.")
 
 def view_products():
     session = SessionLocal()
@@ -23,9 +23,9 @@ def update_quantity(product_id, new_quantity):
         product.quantity = new_quantity
         product.last_updated = datetime.now()
         session.commit()
-        print("🔁 Quantity updated.")
+        print("Quantity updated.")
     else:
-        print("❌ Product not found.")
+        print("Product not found.")
     session.close()
 
 def delete_product(product_id):
@@ -34,9 +34,9 @@ def delete_product(product_id):
     if product:
         session.delete(product)
         session.commit()
-        print("🗑️ Product deleted.")
+        print("Product deleted.")
     else:
-        print("❌ Product not found.")
+        print("Product not found.")
     session.close()
 
 def search_product(name):
